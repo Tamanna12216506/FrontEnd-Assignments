@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1><mark><img src="../assest/pizza.png" alt="" height="20px" width="20px"> Pizza Mania<img src="../assest/pizza.png" alt="" height="20px" width="20px"></mark></h1>
+    <fieldset>
+        <legend><b>🍕Pizza Order Here🍕</b></legend>
+    <form action="">
+
+        <label for="name">First Name:</label>
+        <input type="text" name="firstname" id="name" placeholder="First Name" required> <br><br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="LastName" id="lastname" placeholder="Last Name"> <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="useremail" id="email" placeholder="abc@example.com" required><br><br>
+
+        <label for="phone">Contact:</label>
+        <input type="tel" name="userphone" id="phone" placeholder="Ex-8989898989" maxlength="10" minlength="10" required><br><br>
+
+        <label for="delivery">Preferred Delivery Date:</label>
+        <input type="date" name="" id="delivery" min="2026-04-03" max="2026-04-05"><br><br>
+
+        <label for="size">Size:</label> <br><br>
+        <label for="small">Small</label>
+        <input type="radio" name="size" id="small">
+        <label for="medium">Medium</label>
+        <input type="radio" name="size" id="medium">   
+        <label for="large">Large</label>
+        <input type="radio" name="size" id="large"><br><br>
+
+        <label for="outlet"><mark>Outlet:</mark></label>
+        <select name="outlet" id="outlet">
+            <option value="">Phagwara</option>
+            <option value="">Jalandhar</option>
+            <option value="">Ludhiana</option>
+        </select><br><br>
+
+        <label for="menu">Menu⬇️</label><br><br>
+        <table>
+            <tr>
+                <td>
+                     <img src="../assest/macro.png"alt="" height="50px" width="50px">
+                 </td>
+                 <td>
+                     <input type="checkbox" name="menu" id="hawai" >
+                     <label for="hawai">Hawaiian(150.00 $ <strike>170$</strike>)</label>
+                  </td>
+                  <td>
+                    <select name=""id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                  </td>
+            </tr>
+            <tr>
+                <td>
+                     <img src="../assest/pepro.png"alt="" height="50px" width="50px">
+                 </td>
+                 <td>
+                     <input type="checkbox" name="menu" id="pepro" >
+                     <label for="pepro">Pepperoni(140.00 $ <strike>160$</strike>)</label>
+                  </td>
+                  <td>
+                    <select name=""id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                  </td>
+            </tr>
+            <tr>
+                <td>
+                     <img src="../assest/veg.png"alt="" height="50px" width="50px">
+                 </td>
+                 <td>
+                     <input type="checkbox" name="menu" id="veg" >
+                     <label for="veg">Vegetable(130.00 $ <strike>150$</strike>)</label>
+                  </td>
+                  <td>
+                    <select name=""id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                  </td>
+            </tr>
+        </table>
+        <br><br>
+        <label for="">Extra Details👇</label>
+        <table style="border-spacing: 10px;">
+            <tr>
+                <td><img src="../assest/atm-card.png" alt="" height="20px" width="20px"></td>
+                <td>Credit Card:</td>
+                <td><input type="text" name="" id="" placeholder="1234-5678-9123-1111"></td>
+                <td><button name="verify">verify Card</button></td>
+            </tr>
+            <tr>
+                <td><img src="../assest/pin.png" alt="" height="20px" width="20px"></td>
+                <td>Pin:</td>
+                <td><input type="text" name="" id="" placeholder="421504" minlength="6" maxlength="6"></td>
+            </tr>
+            <tr>
+                <td><img src="../assest/image-gallery.png" alt="" height="20px" width="20px"></td>
+                <td><i><mark>Upload photo for discound:</mark></i></td>
+                <td><input type="file" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><img src="../assest/post-it.png" alt="" height="20px" width="20px"></td>
+                <td><i><mark>Additional Note:</mark></i></td>
+                <td><textarea name="" id=""></textarea></td>
+            </tr>
+            <tr>
+                <!-- <td><img src="../assest/" alt="" height="20px" width="20px"></td> -->
+                 <td>⭐</td>
+                <td><i><mark>Rating:</mark></i></td>
+                <td><input type="range" name="" id="" ></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td><button type="submit">Submit Order</button></td>
+            </tr>
+        </table>
+
+</fieldset>
+
+    </form>
+</body>
+</html>

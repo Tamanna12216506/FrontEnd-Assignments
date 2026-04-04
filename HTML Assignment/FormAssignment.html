@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Assignment</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">Name*</label>
+        <input type="text" name="name" id="name" required><br><br>
+
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address"><br><br>
+
+        <label for="zip">Zip Code*</label>
+        <input type="number" name="zipCode" id="zip" required placeholder="enter a 5-digit code" maxlength="5" minlength="5"><br><br>
+
+        <label for="">Country*</label>
+        <select name="" id="">
+            <option value="">India</option>
+            <option value="">USA</option>
+            <option value="">UK</option>
+        </select><br><br>
+
+        <label for="">Gender*</label>
+    
+        <input type="radio" name="gender" id="male" required>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" required>
+        <label for="female">Female</label><br><br>
+
+        <label for="">Preferences*</label>
+        <input type="checkbox" name="prefer" id="red" >
+        <label for="red">Red</label>
+        <input type="checkbox" name="prefer" id="green">
+        <label for="green">Green</label>
+        <input type="checkbox" name="prefer" id="blue">
+        <label for="blue">Blue</label><br><br>
+
+        <label for="phone">Phone*</label>
+        <input type="tel" name="phone" id="phone" maxlength="10" minlength="10" required>
+        <br><br>
+
+        <label for="email">Email*</label>
+        <input type="email" name="email" id="email" required><br><br>
+
+        <label for="pass">Password*</label>
+        <input type="password" name="password" id="pass" placeholder="6-8 characters" maxlength="8" minlength="6" required><br><br>
+
+        <label for="verify">Verify Password*</label>
+        <input type="password" name="verifyPass" id="verify" minlength="6" maxlength="8" required><br><br>
+
+        <label for="dob">Birthday*</label>
+        <input type="date" name="" id="dob" min="2000-01-01" max="2025-12-31" required><br><br>
+
+        <label for="appoit">Appointment*</label>
+        <input type="time"  id="appoit" required><br><br>
+        
+        <button type="submit">SEND</button>
+        <input type="reset" name="" id="" value="CLEAR">
+
+    </form>
+</body>
+</html>
