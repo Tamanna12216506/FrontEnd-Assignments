@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7-Eleven – Coffee on Repeat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== ANNOUNCEMENT BAR ===== -->
+  <div class="announcement-bar">
+    We accept SNAP/EBT. <a href="#">Find a Store</a>.
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="#" class="logo">
+        <img src="assets/images/logo.png" alt="7-Eleven Logo" width="60" height="60" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="logo-fallback" style="display:none">
+          <span class="logo-seven">7</span>
+          <span class="logo-eleven">ELEVEN</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+
+        <!-- FOOD -->
+        <div class="nav-item">
+          <a href="#" class="nav-link">Food</a>
+          <div class="dropdown">
+            <div class="dropdown-inner">
+              <div class="dropdown-col">
+                <a href="#">Hot Foods</a>
+                <a href="#">Sandwiches</a>
+                <a href="#">Pizza</a>
+                <a href="#">Snacks</a>
+              </div>
+              <div class="dropdown-col">
+                <a href="#">Bakery</a>
+                <a href="#">Candy</a>
+                <a href="#">Chips</a>
+                <a href="#">Grocery</a>
+              </div>
+              <div class="dropdown-col">
+                <a href="#">Healthy Options</a>
+                <a href="#">Ice Cream</a>
+                <a href="#">Big Bite® Hot Dogs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DRINKS -->
+        <div class="nav-item">
+          <a href="#" class="nav-link">Drinks</a>
+          <div class="dropdown">
+            <div class="dropdown-inner">
+              <div class="dropdown-col">
+                <a href="#">Coffee</a>
+                <a href="#">Big Gulp®</a>
+                <a href="#">Slurpee®</a>
+                <a href="#">Bottled Water</a>
+              </div>
+              <div class="dropdown-col">
+                <a href="#">Energy Drinks</a>
+                <a href="#">Energy Shots</a>
+                <a href="#">Sports Drinks</a>
+                <a href="#">Cold Pressed Juices</a>
+              </div>
+              <div class="dropdown-col">
+                <a href="#">Bottled Tea</a>
+                <a href="#">Beer</a>
+                <a href="#">Wine</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7REWARDS -->
+        <div class="nav-item">
+          <a href="#" class="nav-link">7REWARDS®</a>
+          <div class="dropdown">
+            <div class="dropdown-inner">
+              <div class="dropdown-col">
+                <a href="#">Membership</a>
+                <a href="#">Mobile Checkout</a>
+              </div>
+              <div class="dropdown-col">
+                <a href="#">7-Eleven Wallet</a>
+                <a href="#">7-Eleven Gold Pass™</a>
+              </div>
+              <div class="dropdown-col">
+                <a href="#">Fuel Savings</a>
+                <a href="#">Community Discounts</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ORDER -->
+        <div class="nav-item">
+          <a href="#" class="nav-link">Order 7NOW® Delivery</a>
+        </div>
+
+        <!-- SHOP -->
+        <div class="nav-item">
+          <a href="#" class="nav-link">Shop 7Collection®</a>
+        </div>
+
+      </nav>
+      <div class="nav-actions">
+        <a href="#" class="find-store">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Find a Store
+        </a>
+        <a href="#" class="user-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+      </div>
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#">Food</a>
+      <a href="#">Drinks</a>
+      <a href="#">7REWARDS®</a>
+      <a href="#">Order 7NOW® Delivery</a>
+      <a href="#">Shop 7Collection®</a>
+      <a href="#">Find a Store</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Coffee on Repeat</h1>
+      <p>Just one of those days, you know? (We know.) Any size hot coffee refill is only $1* in store!</p>
+      <a href="#" class="btn btn-white">Find a Store</a>
+    </div>
+    <div class="hero-image">
+      <div class="hero-bg-red">
+        <div class="repeat-text">
+          <span>$1 Refill</span><span>$1 Refill</span><span>$1 Refill</span>
+          <span>$1 Refill</span><span>$1 Refill</span><span>$1 Refill</span>
+        </div>
+        <img src="assets/images/coffee-cup.png" alt="7-Eleven Coffee Cup" class="cup-img"
+          onerror="this.style.display='none';this.parentElement.querySelector('.cup-fallback').style.display='flex'"/>
+        <div class="cup-fallback" style="display:none;">
+          <div class="cup-svg">
+            <div class="cup-top"></div>
+            <div class="cup-body">
+              <div class="cup-logo-oval">
+                <div class="cup-logo-seven">7</div>
+                <div class="cup-logo-eleven">ELEVEN</div>
+                <div class="cup-logo-since">OG TO-GO™ · SINCE 1964</div>
+              </div>
+            </div>
+            <div class="cup-bottom"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROMO CARDS ===== -->
+  <section class="promo-cards">
+    <div class="promo-card dark">
+      <div class="promo-card-header">
+        <div class="gold-pass-badge">7-ELEVEN <span class="gold-g">G</span> GOLD PASS.</div>
+      </div>
+      <div class="promo-card-body">
+        <div class="promo-card-offer">
+          <p>Sign up to get</p>
+          <div class="promo-amount">$10</div>
+          <p>7-Eleven® Cash</p>
+        </div>
+        <img src="assets/images/gold-pass-woman.png" alt="Gold Pass" class="promo-person"
+          onerror="this.style.display='none'"/>
+      </div>
+      <p class="promo-desc">Get $10 in 7-Eleven® Cash** when you Sign Up for 7-Eleven® Gold Pass™</p>
+      <a href="#" class="btn btn-dark">Sign Up Now</a>
+    </div>
+
+    <div class="promo-card light">
+      <div class="promo-card-header rewards-header">
+        <img src="assets/images/7rewards-logo.png" alt="7Rewards" class="rewards-logo"
+          onerror="this.innerHTML='⭐ 7REWARDS'"/>
+        <div class="rewards-logo-fallback">⭐ <span style="color:#f37021">7</span><span style="color:#007a3d">REWARDS</span>®</div>
+      </div>
+      <div class="promo-card-body rewards-body">
+        <img src="assets/images/rewards-phone.png" alt="7Rewards App" class="promo-person"
+          onerror="this.style.display='none'"/>
+      </div>
+      <p class="promo-desc">Get the 7-Eleven app and reap the rewards.</p>
+      <a href="#" class="btn btn-dark">Get the App</a>
+    </div>
+  </section>
+
+  <!-- ===== DEW PROMO BANNER ===== -->
+  <section class="dew-banner">
+    <div class="dew-text">
+      <p class="dew-tag">BUY DEW® (20 OZ) WITH</p>
+      <div class="dew-rewards-logo">7REWARDS®</div>
+      <p class="dew-tag">TO ENTER FOR A CHANCE TO</p>
+      <h2 class="dew-win">WIN A BRONCO®</h2>
+      <a href="#" class="btn btn-black">Learn More</a>
+    </div>
+    <div class="dew-image">
+      <img src="assets/images/dew-bottles.png" alt="Mountain Dew Bottles" class="dew-bottles"
+        onerror="this.style.display='none'"/>
+      <div class="dew-bottles-fallback">🥤🥤🥤</div>
+    </div>
+  </section>
+
+  <!-- ===== INSIDE 7-ELEVEN ===== -->
+  <section class="inside-section">
+    <div class="inside-header">
+      <h2>Inside 7-Eleven</h2>
+      <a href="#" class="view-all">View All</a>
+    </div>
+    <div class="inside-grid">
+      <div class="inside-card">
+        <div class="inside-card-img" style="background:#1a7a4a">
+          <img src="assets/images/espresso-girl.png" alt="Espresso" onerror="this.style.display='none'"/>
+          <div class="inside-card-img-fallback">☕</div>
+        </div>
+        <h3>What Is Espresso?</h3>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <div class="inside-card">
+        <div class="inside-card-img" style="background:#1a7a4a">
+          <img src="assets/images/coffee-beans.png" alt="Coffee Beans" onerror="this.style.display='none'"/>
+          <div class="inside-card-img-fallback">☕</div>
+        </div>
+        <h3>Taste The Difference: The Different Types of Coffee Beans and Roasts</h3>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <div class="inside-card">
+        <div class="inside-card-img" style="background:#c8a870">
+          <img src="assets/images/latte.png" alt="Latte" onerror="this.style.display='none'"/>
+          <div class="inside-card-img-fallback">🥛</div>
+        </div>
+        <h3>What is A Latte? Enjoy One Today!</h3>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <div class="inside-card">
+        <div class="inside-card-img" style="background:#e07b2a">
+          <img src="assets/images/pumpkin.png" alt="Pumpkin Somethin" onerror="this.style.display='none'"/>
+          <div class="inside-card-img-fallback">🎃</div>
+        </div>
+        <h3>The Pumpkin Somethin'</h3>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7COLLECTION ===== -->
+  <section class="collection-section">
+    <div class="collection-grid">
+      <div class="collection-left">
+        <div class="collection-overlay">
+          <div class="collection-badge">7COLLECTiON</div>
+          <a href="#" class="btn btn-green">Shop Now</a>
+        </div>
+        <img src="assets/images/collection-group.png" alt="7Collection" class="collection-img"
+          onerror="this.style.display='none'"/>
+        <div class="collection-img-fallback">
+          <div class="collection-placeholder">
+            <p>7COLLECTiON</p>
+            <p>Fashion & Lifestyle</p>
+          </div>
+        </div>
+      </div>
+      <div class="collection-right">
+        <img src="assets/images/collection-hat.png" alt="7-Eleven Hat" class="collection-img"
+          onerror="this.style.display='none'"/>
+        <div class="collection-right-fallback">
+          <p>🧢</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LET'S SOCIALIZE ===== -->
+  <section class="socialize-section">
+    <h2>LET'S SOCIALIZE</h2>
+    <div class="social-icons">
+      <a href="#" class="social-link">
+        <div class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </div>
+        <span>Instagram</span>
+      </a>
+      <a href="#" class="social-link">
+        <div class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </div>
+        <span>Twitter</span>
+      </a>
+      <a href="#" class="social-link">
+        <div class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </div>
+        <span>Facebook</span>
+      </a>
+      <a href="#" class="social-link">
+        <div class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </div>
+        <span>Youtube</span>
+      </a>
+      <a href="#" class="social-link">
+        <div class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34l-.01-8.68a8.27 8.27 0 004.84 1.55V4.74a4.85 4.85 0 01-1.07-.05z"/></svg>
+        </div>
+        <span>Tiktok</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== HIRING BANNER ===== -->
+  <div class="hiring-banner">
+    <strong>We're Hiring!</strong> Employees can save 15¢/gal. <a href="#">Apply Now</a>
+  </div>
+
+  <!-- ===== FINE PRINT ===== -->
+  <div class="fine-print">
+    <p>*Valid thru 04/28/2026. Consumer pays applicable sales tax. Available while supplies last. Offer good at participating 7-Eleven/Speedway stores.</p>
+    <p>**Valid thru 4/24/26. New users only. Subscription required and auto renews unless cancelled. 7-Eleven Cash deposited in your account after the trial period and upon completion of the first month's subscription cycle. 7 Eleven Cash constitutes promotional store credit and may be redeemed only for eligible purchases at participating 7 Eleven locations or within the 7 Eleven or 7NOW apps. Additional limitations apply. Refer to full terms in the 7 Eleven app. ©2026 7 Eleven, Inc. All rights reserved.</p>
+  </div>
+
+  <!-- ===== STORE LOCATOR ===== -->
+  <section class="store-locator">
+    <a href="#" class="store-locator-link">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Store Locator
+      <svg class="arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Get To Know Us</h4>
+        <a href="#">About 7-Eleven</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">Newsroom</a>
+      </div>
+      <div class="footer-col">
+        <h4>Franchise Info</h4>
+        <a href="#">Our Business Model</a>
+        <a href="#">Franchise Process</a>
+        <a href="#">Franchising for Veterans</a>
+      </div>
+      <div class="footer-col">
+        <h4>How Can We Help?</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">Feedback</a>
+        <a href="#">New Vendor Information</a>
+        <a href="#">Vendor Guidelines</a>
+        <a href="#">Financial Services</a>
+        <a href="#">Business Fuel Cards</a>
+      </div>
+      <div class="footer-col">
+        <h4>Download</h4>
+        <a href="#">7-Eleven App</a>
+        <a href="#">7Now Delivery App</a>
+        <a href="#">7Charge App</a>
+      </div>
+      <div class="footer-logo-col">
+        <div class="footer-logo">
+          <span class="footer-logo-seven">7</span>
+          <span class="footer-logo-eleven">ELEVEN</span>
+          <span class="footer-logo-reg">®</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-links">
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Privacy Notice</a>
+        <a href="#">FAQs</a>
+        <a href="#">California Privacy</a>
+        <a href="#">Your Privacy Choices</a>
+        <a href="#">California Transparency in Supply Chains Act</a>
+        <a href="#">CA Cleaning Products Right to Know</a>
+        <a href="#">Do Not Sell or Share My Information</a>
+        <a href="#">Site Accessibility Statement</a>
+        <a href="#">California Assembly Bill 1305</a>
+      </div>
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
+    </div>
+    <p class="footer-copy">©2026 7-ELEVEN, Inc. All rights reserved. 7-ELEVEN, 7NOW, 7Rewards, Brainfreeze, Big Bite, Big Gulp, Slurpee and the Tri-Stripe Design are registered trademarks of 7-ELEVEN.</p>
+  </footer>
+
+</body>
+</html>
