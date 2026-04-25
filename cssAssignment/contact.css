@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-color: #ABB1AF;
+    color: #909A99;
+    font-weight: 700;
+    border-radius: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    
+}
+.container{
+    width: 700px;
+    background-color: #DFF1E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container h1{
+    margin-bottom: 15px;
+    color: #324447;
+}
+.content{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+    display: grid;
+    
+}
+.names{
+    margin: 4px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#email{
+    margin: 4px;
+    width: 100%;
+    border-color: #ABB1AF;
+}
+
+.queryType{
+    margin: 4px;
+    display: flex;
+    gap: 20px;
+}
+
+.generl{
+    border: 2px solid #ABB1AF;
+    padding: 8px;
+}
+
+.supprt{
+    border: 2px solid #ABB1AF;
+    padding: 8px;
+}
+
+#textArea{
+    margin: 4px;
+    width:100%;
+    padding: 20px;
+}
+
+#btn{
+    width: 100%;
+    padding:10px;
+    background-color: teal;
+    color:#DFF1E7;
+    font-weight: 700;
+
+}
+input{
+    padding: 8px;
+    border: 2px solid #ABB1AF;
+}

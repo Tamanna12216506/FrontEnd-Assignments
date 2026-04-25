@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h4>☀️Weather Now</h4>
+            <select name="city" id="city">
+                <option value="">Units</option>
+            </select>
+        </div>
+
+        <div class="detail">
+            <h2>How's the sky looking today?</h2>
+
+            <input type="text" id="search" placeholder="🔍 Search for a place...">
+            <button>Search</button>
+        </div>
+
+        <div class="main">
+            <div class="left">
+
+            <div class="content">
+                <div class="place">
+                    <h5>Berlin, Germany</h5>
+                    <p>Tuesday, Aug 5, 2025</p>
+                </div>
+                
+                <div class="temp"><h1>🌞 20°</h1> </div>
+            </div>
+
+
+            <div class="feel">
+                <p>Feels Like</p> <h3>18°</h3>
+            </div>
+            <div class="humidity">
+                <p>Humidity</p> <h3>46%</h3>
+            </div>
+            <div class="wind">
+                <p>Wind</p> <h3>14 km/h</h3>
+            </div>
+            <div class="prec">
+                <p>Precipitation</p> <h3>0mm</h3>
+            </div>
+
+            <h2>Daily forecast</h2>
+            <div class="daily">
+                <div class="day"><p>Tue </p> <p>🌧️</p> <p>20°  15°</p></div>
+                <div class="day"><p>Wed </p> <p>🌦️</p> <p>21°  15°</p></div>
+                <div class="day"><p>Thu </p> <p>☀️</p> <p>24°  14°</p></div>
+                <div class="day"><p>Fri </p> <p>⛅</p> <p>25°  13°</p></div>
+                <div class="day"><p>Sat </p> <p>🌩️</p> <p>21°  15°</p></div>
+                <div class="day"><p>Sun </p> <p>🌨️</p> <p>25°  16°</p></div>
+                <div class="day"><p>Mon </p> <p>💨</p> <p>24°  15°</p></div>
+            </div>
+            </div>
+
+            <div class="right">
+
+            <div class="hourly">
+                <div class="hour-header">
+                <h3>Hourly forecast</h3>
+                <select name="hourly" id="">
+                    <option value="">Tuesday</option>
+                    <option value="">Wednesday</option>
+                    <option value="">Thursday</option>
+                    <option value="">Friday</option>
+                    <option value="">Saturday</option>  
+                    <option value="">Sunday</option>    
+                    <option value="">Monday</option>
+                </select>
+                </div>
+
+                <div>☁️ 3PM  <p>20°</p></div>
+                <div>⛅ 4PM  <p>20°</p></div>
+                <div>☀️ 5PM  <p>20°</p></div>
+                <div>☁️ 6PM  <p>19°</p></div>
+                <div>☁️ 7PM  <p>18°</p></div>
+                <div>💨 8PM  <p>18°</p></div>
+                <div>🌨️ 9PM  <p>17°</p></div>
+                <div>☁️ 10PM <p>17°</p></div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+ div{
+    background-color: rgb(45, 44, 44);
+    color: white;
+    height: 550px;
+    width: 300px;
+    text-align: center;
+    margin: 200px auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+#place{
+    margin-top: 0px;
+    color: yellow;
+}
+#a,#b,#c,#d,#e{
+    background-color: rgba(161, 158, 158, 0.278);
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto;
+    padding-top: 7px;
+
+}
+#dis{
+    padding-top: 20px;
+}
+
+#image{
+    height: 100px;
+    border-radius: 500px;
+    box-sizing: border-box;
+    margin-top: 5px auto;
+}
+h1{
+    margin-bottom: 5px;
+}
